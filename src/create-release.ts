@@ -55,7 +55,7 @@ export async function run() {
     // Create a release
     // API Documentation: https://developer.github.com/v3/repos/releases/#create-a-release
     // Octokit Documentation: https://octokit.github.io/rest.js/#octokit-routes-repos-create-release
-    await github.repos.createRelease({
+    const resp = await github.repos.createRelease({
       owner,
       repo,
       tag_name: tag,
@@ -64,6 +64,7 @@ export async function run() {
       draft,
       prerelease
     });
+    console.log(resp);
   } catch (error) {
     core.setFailed(error.message);
   }

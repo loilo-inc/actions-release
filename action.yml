@@ -1,6 +1,6 @@
-name: 'Create a Release'
-description: 'Create a release for a tag in your repository'
-author: 'GitHub'
+name: "Create Release"
+description: "Create Github Release based on LoiLo Flow"
+author: "LoiLo"
 inputs:
   tag_name:
     description: 'The name of the tag. This should come from the webhook payload, `github.GITHUB_REF` when a user pushes a new tag'
