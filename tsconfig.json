@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "target": "es2018"
+  },
+  "include": ["src/**/*.ts"]
+}
