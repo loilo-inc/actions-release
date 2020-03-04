@@ -29,7 +29,7 @@ async function releaseBody(): Promise<string> {
   let range = "";
   if (curr) {
     // head to the first commit
-    range = `head...${curr}`;
+    range = `${next}...${curr}`;
   }
   return execOutput(`git log ${range} --oneline`);
 }
