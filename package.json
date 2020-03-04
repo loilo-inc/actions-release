@@ -9,6 +9,7 @@
   "devDependencies": {
     "@types/node": "^13.7.7",
     "@types/semver": "^7.1.0",
-    "@zeit/ncc": "^0.21.1"
+    "@zeit/ncc": "^0.21.1",
+    "prettier": "^1.19.1"
   }
 }
